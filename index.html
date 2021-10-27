@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <title>TeleCom</title>
+</head>
+<body>
+
+
+<div class="d-flex align-items-start wrapMenu">
+    <div class="nav flex-column menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="image-logo">
+            <img src="static/assets/logo-telecomsa.png" width="100%">
+        </div>
+        <button class="nav-link active" id="v-pills-inicio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-inicio"
+                type="button" role="tab" aria-controls="v-pills-inicio" aria-selected="true">Início
+        </button>
+        <button class="nav-link noClick" id="v-pills-topologia-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-topologia"
+                type="button" role="tab" aria-controls="v-pills-topologia" aria-selected="false">Topologia
+        </button>
+
+        <button class="nav-link sub-btn" id="v-pills-sites-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sites"
+                type="button" role="tab" aria-controls="v-pills-sites" aria-selected="false">Sites
+        </button>
+        <button class="nav-link sub-btn" id="v-pills-eventos-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-eventos"
+                type="button" role="tab" aria-controls="v-pills-eventos" aria-selected="false">Eventos
+        </button>
+        <button class="nav-link sub-btn" id="v-pills-desempenho-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-desempenho"
+                type="button" role="tab" aria-controls="v-pills-desempenho" aria-selected="false">Desempenho
+        </button>
+
+        <button class="nav-link noClick" id="v-pills-ativos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ativos"
+                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Ativos
+        </button>
+
+        <button class="nav-link sub-btn" id="v-pills-despesas-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-despesas"
+                type="button" role="tab" aria-controls="v-pills-despesas" aria-selected="false">Despesas
+        </button>
+        <button class="nav-link sub-btn" id="v-pills-documentos-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-documentos"
+                type="button" role="tab" aria-controls="v-pills-documentos" aria-selected="false">Documentos
+        </button>
+        <button class="nav-link sub-btn" id="v-pills-contratacao-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-contratacao"
+                type="button" role="tab" aria-controls="v-pills-contratacao" aria-selected="false">Contratações
+        </button>
+        <button class="nav-link sub-btn" id="v-pills-manutencaoa-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-manutencaoa"
+                type="button" role="tab" aria-controls="v-pills-manutencaoa" aria-selected="false">Manutenção
+        </button>
+
+        <button class="nav-link" id="v-pills-relatorios-tab" data-bs-toggle="pill" data-bs-target="#v-pills-relatorios"
+                type="button" role="tab" aria-controls="v-pills-relatorios" aria-selected="false">Relatórios
+        </button>
+        <button class="nav-link" id="v-pills-processos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-processos"
+                type="button" role="tab" aria-controls="v-pills-processos" aria-selected="false">Processos
+        </button>
+        <button class="nav-link" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard"
+                type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="false">Dashboard
+        </button>
+
+
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+        <nav class="navbar navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand"></a>
+                <div class="d-flex">
+                    <a class="navbar-brand">Nome da Empresa LTDA.</a>
+                    <button class="btn btn-outline-light" type="submit">Sair</button>
+                </div>
+            </div>
+        </nav>
+        <div class="tab-pane fade show active" id="v-pills-inicio" role="tabpanel" aria-labelledby="v-pills-inicio-tab">
+            <div class="pane-header">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Resumo Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resumo de Despesas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Monitoria Técnica</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="container-fluid widget">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="blueTh">JAN</th>
+                        <th scope="col" class="blueTh">FEV</th>
+                        <th scope="col" class="blueTh">MAR</th>
+                        <th scope="col" class="blueTh">MAI</th>
+                        <th scope="col" class="blueTh">JUN</th>
+                        <th scope="col" class="blueTh">JUL</th>
+                        <th scope="col" class="blueTh">AGO</th>
+                        <th scope="col" class="blueTh">SET</th>
+                        <th scope="col" class="blueTh">OUT</th>
+                        <th scope="col" class="blueTh">NOV</th>
+                        <th scope="col" class="blueTh">DEZ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td scope="row">eeee</td>
+                        <td>432</td>
+                        <td>321</td>
+                        <td>782</td>
+                        <td>132</td>
+                        <td>447</td>
+                        <td>741</td>
+                        <td>349</td>
+                        <td>821</td>
+                        <td>601</td>
+                        <td>203</td>
+                        <td>420</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">RECEBIDOS</td>
+                        <td>R$ 1227,53</td>
+                        <td>R$ 5321,65</td>
+                        <td>R$ 3782,63</td>
+                        <td>R$ 3132,72</td>
+                        <td>R$ 2447,52</td>
+                        <td>R$ 1741,71</td>
+                        <td>R$ 4349,12</td>
+                        <td>R$ 3821,13</td>
+                        <td>R$ 4601,56</td>
+                        <td>R$ 3203,12</td>
+                        <td>R$ 3420,43</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">PAGAMENTOS</td>
+                        <td>R$ 1741,71</td>
+                        <td>R$ 4349,12</td>
+                        <td>R$ 3821,13</td>
+                        <td>R$ 5321,65</td>
+                        <td>R$ 3782,63</td>
+                        <td>R$ 3132,72</td>
+                        <td>R$ 4601,56</td>
+                        <td>R$ 3203,12</td>
+                        <td>R$ 3420,43</td>
+                        <td>R$ 1227,53</td>
+                        <td>R$ 2447,52</td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">DESPESAS</td>
+                        <td>R$ 103,72</td>
+                        <td>R$ 421,56</td>
+                        <td>R$ 320,12</td>
+                        <td>R$ 340,43</td>
+                        <td>R$ 127,53</td>
+                        <td>R$ 247,52</td>
+                        <td>R$ 1351,71</td>
+                        <td>R$ 349,22</td>
+                        <td>R$ 821,13</td>
+                        <td>R$ 531,65</td>
+                        <td>R$ 782,63</td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">LUCRO</td>
+                        <td>R$ 4201,56</td>
+                        <td>R$ 2203,12</td>
+                        <td>R$ 2420,43</td>
+                        <td>R$ 4227,53</td>
+                        <td>R$ 2447,52</td>
+                        <td>R$ 1174,71</td>
+                        <td>R$ 2439,32</td>
+                        <td>R$ 2341,13</td>
+                        <td>R$ 1521,65</td>
+                        <td>R$ 2382,63</td>
+                        <td>R$ 4132,72</td>
+
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-fluid charts">
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <label class="label label-success">Despesas Financeiras</label>
+                        <div id="area-chart"></div>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <label class="label label-success">Provisonamento Temporário</label>
+                        <div id="line-chart"></div>
+                    </div>
+
+                </div>
+
+                <script>
+
+                </script>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-sites" role="tabpanel" aria-labelledby="v-pills-sites-tab">
+            <div class="row">
+                <div class="col-sm-6 text-left colorFontBlue">
+                    <div class="widget-header">
+                        <h4>INSIRA NOVO SITE:</h4>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <div class="row align-items-start">
+                                <div class="col-sm-2">
+                                    <label for="site" class="col-form-label">Site</label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <input type="text" id="site" class="form-control"
+                                           aria-describedby="site">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-sm-2">
+                                    <label for="cliente_site" class="col-form-label">Cliente</label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <input type="text" id="cliente_site" class="form-control"
+                                           aria-describedby="cliente_site">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">INSERIR SITE</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <div class="card">
+
+
+                    <table class="table">
+                        <thead class="sitesHeader">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">SITE</th>
+                            <th scope="col">CLIENTE</th>
+                            <th scope="col">RETORNO</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>www.minasgas.com.br</td>
+                            <td>Otto</td>
+                            <td>R$ 32.045,54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>www.uol.com.br</td>
+                            <td>Thornton</td>
+                            <td>R$ 42.045,54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>www.globo.com.br</td>
+                            <td>Marcos</td>
+                            <td>R$ 11.325,21</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js"></script>
+
+
+<script src="static/js/script.js"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+    background-color:#F8F9FA;
+    font-family: 'Titillium Web', sans-serif;
+    width:100%;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    z-index:1;
+    padding-left:20%;
+     background-color:#00a2ed;
+}
+
+.menu .nav-link{
+    text-align:left;
+    font-weight:500;
+    color:#fff;
+    font-size:15px;
+    background:none;
+    border:0;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color:#00A8E9;
+    background:none;
+}
+ .nav-link:hover{
+    opacity:0.8;
+}
+.wrapMenu{
+    width:100%;
+    position:relative;
+    z-index:0;
+}
+.menu{
+    width:16%;
+    height:100vh;
+    background-color:#02122F;
+    padding-top:0px;
+    z-index:2;
+}
+
+.image-logo{
+    padding:15px;
+}
+
+.sub-btn{
+    margin-left:5%;
+}
+
+.tab-content{
+    width:86%;
+    height:100vh;
+}
+.tab-pane{
+    width:100%;
+    height:100vh;
+    padding-top:70px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.pane-header .nav-link{
+    font-weight:500;
+    color:#00a2ed;
+    font-size:15px;
+    background:none;
+    border:0;
+}
+
+.pane-header{
+    border-bottom:0.002rem solid #00a2ed;
+}
+
+.widget{
+    margin-top:15px;
+}
+
+.table td{
+   font-size:12px;
+   text-align:center;
+}
+
+.table .blueTh{
+    background:#00a2ed;
+    color:#fff;
+    text-align:center;
+    border:none;
+    border-radius:20px;
+    margin:4px;
+
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+
+}
+.table{
+    margin-bottom:30px;
+}
+
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart{
+  min-height: 250px;
+}
+
+.noClick{
+    pointer-events: none;
+}
+
+.colorFontBlue{
+    color:#02122F;
+    padding:30px;
+}
+
+.btn-primary{
+    background:#00a2ed;
+}
+
+.sitesHeader{
+    background:#00a2ed;
+    color:#fff;
+}
