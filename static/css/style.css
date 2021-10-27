@@ -1,132 +1,144 @@
-body{
-    background-color:#F8F9FA;
-    font-family: 'Titillium Web', sans-serif;
-    width:100%;
+body {
+  background-color: #f8f9fa;
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
 }
 
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:60px;
-    z-index:1;
-    padding-left:20%;
-     background-color:#00a2ed;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  padding-left: 20%;
+  background-color: #00a2ed;
 }
 
-.menu .nav-link{
-    text-align:left;
-    font-weight:500;
-    color:#fff;
-    font-size:15px;
-    background:none;
-    border:0;
+.menu .nav-link {
+  text-align: left;
+  font-weight: 500;
+  color: #fff;
+  font-size: 15px;
+  background: none;
+  border: 0;
 }
 
-.nav-link:focus, .nav-link:hover{
-    color:#00A8E9;
-    background:none;
+.nav-link:focus,
+.nav-link:hover {
+  color: #00a8e9;
+  background: none;
 }
- .nav-link:hover{
-    opacity:0.8;
+.nav-link:hover {
+  opacity: 0.8;
 }
-.wrapMenu{
-    width:100%;
-    position:relative;
-    z-index:0;
+.wrapMenu {
+  width: 100%;
+  position: relative;
+  z-index: 0;
 }
-.menu{
-    width:16%;
-    height:100vh;
-    background-color:#02122F;
-    padding-top:0px;
-    z-index:2;
-}
-
-.image-logo{
-    padding:15px;
+.menu {
+  width: 16%;
+  min-width: 140px;
+  height: 100vh;
+  background-color: #02122f;
+  padding-top: 0px;
+  z-index: 2;
 }
 
-.sub-btn{
-    margin-left:5%;
+.image-logo {
+  padding: 15px;
 }
 
-.tab-content{
-    width:86%;
-    height:100vh;
-}
-.tab-pane{
-    width:100%;
-    height:100vh;
-    padding-top:70px;
-    padding-left:30px;
-    padding-right:30px;
+.sub-btn {
+  margin-left: 5%;
 }
 
-.pane-header .nav-link{
-    font-weight:500;
-    color:#00a2ed;
-    font-size:15px;
-    background:none;
-    border:0;
+.tab-content {
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+}
+.tab-pane {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.pane-header{
-    border-bottom:0.002rem solid #00a2ed;
+.pane-header .nav-link {
+  font-weight: 500;
+  color: #00a2ed;
+  font-size: 15px;
+  background: none;
+  border: 0;
 }
 
-.widget{
-    margin-top:15px;
+.pane-header {
+  border-bottom: 0.002rem solid #00a2ed;
 }
 
-.table td{
-   font-size:12px;
-   text-align:center;
+.widget {
+  margin-top: 15px;
 }
 
-.table .blueTh{
-    background:#00a2ed;
-    color:#fff;
-    text-align:center;
-    border:none;
-    border-radius:20px;
-    margin:4px;
+.table td {
+  font-size: 12px;
+  text-align: center;
+}
 
+.table .blueTh {
+  background: #00a2ed;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  margin: 4px;
 }
 
 table {
-    border-collapse: separate;
-    text-indent: initial;
-    border-spacing: 2px;
-
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+  width: 100%;
 }
-.table{
-    margin-bottom:30px;
+.table {
+  margin-bottom: 30px;
 }
 
 #area-chart,
 #line-chart,
 #bar-chart,
 #stacked,
-#pie-chart{
+#pie-chart {
   min-height: 250px;
+  width: 100%;
 }
 
-.noClick{
-    pointer-events: none;
+.noClick {
+  pointer-events: none;
 }
 
-.colorFontBlue{
-    color:#02122F;
-    padding:30px;
+.colorFontBlue {
+  color: #02122f;
+  padding: 30px;
 }
 
-.btn-primary{
-    background:#00a2ed;
+.btn-primary {
+  background: #00a2ed;
 }
 
-.sitesHeader{
-    background:#00a2ed;
-    color:#fff;
+.sitesHeader {
+  background: #00a2ed;
+  color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        margin-left :-140px;;       
+    }
+    .pane-header .nav-link {
+        font-size: 12px;
+      }
+  }
